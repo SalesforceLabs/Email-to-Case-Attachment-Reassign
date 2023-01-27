@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email Attachment Reassigner</fullName>
+    <description>Requires Email2Case.</description>
+    <orgFeaturePayloads>
+        <dependencyDetectionType>A</dependencyDetectionType>
+        <feature>Email2Case</feature>
+        <referencedByEntity>ApexTrigger</referencedByEntity>
+        <referencedByName>emailAttachmentReassigner</referencedByName>
+    </orgFeaturePayloads>
+    <orgFeaturePayloads>
+        <dependencyDetectionType>A</dependencyDetectionType>
+        <feature>Email2Case</feature>
+        <referencedByEntity>ApexClass</referencedByEntity>
+        <referencedByName>emailAttachmentReassignerTest</referencedByName>
+    </orgFeaturePayloads>
+    <types>
+        <members>emailAttachmentReassignerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>emailAttachmentReassigner</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <version>23.0</version>
+</Package>
